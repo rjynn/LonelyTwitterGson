@@ -32,6 +32,14 @@
         android:scrollbars="horizontal" />
 
     <Button
+        android:id="@+id/summaryButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="showSummary"
+        android:text="Summary" />
+
+    <Button
         android:id="@+id/clear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

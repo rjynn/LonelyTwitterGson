@@ -6,7 +6,7 @@ package ca.ualberta.cs.lonelytwitter;
 import java.io.Serializable;
 import java.util.Date;
 
-public class Tweet implements Serializable {
+public class Tweet implements Serializable { //important to be serializable
 	
 	private static final long serialVersionUID = 1L;
 	
@@ -41,5 +41,9 @@ public class Tweet implements Serializable {
 	@Override
 	public String toString() {
 		return tweetDate + " | " + tweetBody;
+	}
+	
+	public int size(){
+		return tweetBody.length();
 	}
 }
